@@ -13,8 +13,7 @@ class authMiddleware
      *
      * @param  \Closure(\Illuminate\Http\Request): (\Symfony\Component\HttpFoundation\Response)  $next
      */
-    public function handle(Request $request, Closure $next): Response
-    {
+    public function handle(Request $request, Closure $next): Response{
         // dd($request->user()->role)
 
         if($request->user()->role == 'admin' or $request->user()->role == 'manager'){

@@ -11,9 +11,11 @@ use App\Http\Controllers\demoController;
 
 // This comment is for checking the git hub account..
 
-Route::get('/', function () {
+Route::get('/', function (){
     return view('welcome');
 });
+
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');
